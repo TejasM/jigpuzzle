@@ -27,12 +27,6 @@
                                     <segue destination="XjR-R3-oyl" kind="show" id="SXw-bX-iyH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PuzzleMe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pA3-Jl-0wv">
-                                <rect key="frame" x="39" y="164" width="243" height="97"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7I-xf-bUp">
                                 <rect key="frame" x="0.0" y="483" width="320" height="45"/>
                                 <color key="backgroundColor" red="0.84519018308080807" green="0.84519018308080807" blue="0.84519018308080807" alpha="1" colorSpace="calibratedRGB"/>
@@ -43,6 +37,16 @@
                                     <segue destination="vbr-eR-ZfF" kind="show" id="AB2-Dg-2mN"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newlogo" translatesAutoresizingMaskIntoConstraints="NO" id="5Cb-kN-La1">
+                                <rect key="frame" x="0.0" y="156" width="320" height="277"/>
+                                <color key="tintColor" red="0.0" green="0.47711658099819276" blue="1" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PuzzleMe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pA3-Jl-0wv">
+                                <rect key="frame" x="39" y="70" width="243" height="97"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" red="0.95044191919191923" green="0.95044191919191923" blue="0.95044191919191923" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47711658099819276" blue="1" alpha="0.41000000000000003" colorSpace="calibratedRGB"/>
                     </view>
@@ -65,6 +69,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dh7-y8-Ttp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Back" id="cJT-KP-Eoe">
+                                        <barButtonItem key="backBarButtonItem" title="Back" id="dqY-oG-hno"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SEa-FG-hhB">
                                 <rect key="frame" x="0.0" y="64" width="600" height="603"/>
                                 <subviews>
@@ -91,14 +103,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47711658099999998" blue="1" alpha="0.40999999999999998" colorSpace="calibratedRGB"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dh7-y8-Ttp">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Back" id="cJT-KP-Eoe">
-                                        <barButtonItem key="backBarButtonItem" title="Back" id="dqY-oG-hno"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -203,7 +207,10 @@
             <point key="canvasLocation" x="-737" y="-179"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="newlogo" width="560" height="475"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ec3-Xf-84g"/>
+        <segue reference="Keh-ux-3li"/>
     </inferredMetricsTieBreakers>
 </document>
