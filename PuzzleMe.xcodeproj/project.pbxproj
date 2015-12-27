@@ -12,6 +12,14 @@
 		A426A2D01C2A0508008DC3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A426A2CE1C2A0508008DC3B1 /* Main.storyboard */; };
 		A426A2D21C2A0508008DC3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A426A2D11C2A0508008DC3B1 /* Assets.xcassets */; };
 		A426A2D51C2A0508008DC3B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A426A2D31C2A0508008DC3B1 /* LaunchScreen.storyboard */; };
+		A440E5CC1C2F089A00178854 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440E5CB1C2F089A00178854 /* LoginViewController.swift */; };
+		A440E5CE1C2F08B000178854 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440E5CD1C2F08B000178854 /* SignUpViewController.swift */; };
+		A4A5B19E1C3046FC00981E49 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A5B19D1C3046FC00981E49 /* Firebase.framework */; };
+		A4A5B1A01C30474F00981E49 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A5B19F1C30474F00981E49 /* libicucore.tbd */; };
+		A4A5B1A21C3047D700981E49 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A5B1A11C3047D700981E49 /* libc++.tbd */; };
+		A4A5B1A41C3047E900981E49 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A5B1A31C3047E900981E49 /* CFNetwork.framework */; };
+		A4A5B1A61C3047FA00981E49 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A5B1A51C3047FA00981E49 /* Security.framework */; };
+		A4A5B1A81C30480700981E49 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A5B1A71C30480700981E49 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,15 @@
 		A426A2D11C2A0508008DC3B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A426A2D41C2A0508008DC3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A426A2D61C2A0508008DC3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A440E5CB1C2F089A00178854 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A440E5CD1C2F08B000178854 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A4A5B19D1C3046FC00981E49 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		A4A5B19F1C30474F00981E49 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		A4A5B1A11C3047D700981E49 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A4A5B1A31C3047E900981E49 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A4A5B1A51C3047FA00981E49 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A4A5B1A71C30480700981E49 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F78F76CDE920DA081837BF14 /* libPods-PuzzleMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PuzzleMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +46,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A5B1A81C30480700981E49 /* SystemConfiguration.framework in Frameworks */,
+				A4A5B1A61C3047FA00981E49 /* Security.framework in Frameworks */,
+				A4A5B1A41C3047E900981E49 /* CFNetwork.framework in Frameworks */,
+				A4A5B1A21C3047D700981E49 /* libc++.tbd in Frameworks */,
+				A4A5B1A01C30474F00981E49 /* libicucore.tbd in Frameworks */,
+				A4A5B19E1C3046FC00981E49 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		592C8F9EDC7839D1CBA21629 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4A5B1A71C30480700981E49 /* SystemConfiguration.framework */,
+				A4A5B1A51C3047FA00981E49 /* Security.framework */,
+				A4A5B1A31C3047E900981E49 /* CFNetwork.framework */,
+				A4A5B1A11C3047D700981E49 /* libc++.tbd */,
+				A4A5B19F1C30474F00981E49 /* libicucore.tbd */,
+				F78F76CDE920DA081837BF14 /* libPods-PuzzleMe.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A426A2BE1C2A0508008DC3B1 = {
 			isa = PBXGroup;
 			children = (
 				A426A2C91C2A0508008DC3B1 /* PuzzleMe */,
 				A426A2C81C2A0508008DC3B1 /* Products */,
+				592C8F9EDC7839D1CBA21629 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +91,15 @@
 		A426A2C91C2A0508008DC3B1 /* PuzzleMe */ = {
 			isa = PBXGroup;
 			children = (
+				A4A5B19D1C3046FC00981E49 /* Firebase.framework */,
 				A426A2CA1C2A0508008DC3B1 /* AppDelegate.swift */,
 				A426A2CC1C2A0508008DC3B1 /* ViewController.swift */,
 				A426A2CE1C2A0508008DC3B1 /* Main.storyboard */,
 				A426A2D11C2A0508008DC3B1 /* Assets.xcassets */,
 				A426A2D31C2A0508008DC3B1 /* LaunchScreen.storyboard */,
 				A426A2D61C2A0508008DC3B1 /* Info.plist */,
+				A440E5CB1C2F089A00178854 /* LoginViewController.swift */,
+				A440E5CD1C2F08B000178854 /* SignUpViewController.swift */,
 			);
 			path = PuzzleMe;
 			sourceTree = "<group>";
@@ -136,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A440E5CC1C2F089A00178854 /* LoginViewController.swift in Sources */,
 				A426A2CD1C2A0508008DC3B1 /* ViewController.swift in Sources */,
+				A440E5CE1C2F08B000178854 /* SignUpViewController.swift in Sources */,
 				A426A2CB1C2A0508008DC3B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,11 +291,18 @@
 		A426A2DA1C2A0508008DC3B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/PuzzleMe";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/**",
+				);
 				INFOPLIST_FILE = PuzzleMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sharpscholar.PuzzleMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -263,11 +312,18 @@
 		A426A2DB1C2A0508008DC3B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/PuzzleMe";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/**",
+				);
 				INFOPLIST_FILE = PuzzleMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sharpscholar.PuzzleMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
