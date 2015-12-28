@@ -97,7 +97,7 @@
                                             <color key="titleColor" red="0.9864859533" green="0.9864859533" blue="0.9864859533" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginTouch:" destination="vbr-eR-ZfF" eventType="touchUpInside" id="Zj2-jI-gqf"/>
+                                            <action selector="loginClick:" destination="vbr-eR-ZfF" eventType="touchUpInside" id="AYa-K5-KPP"/>
                                         </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usz-6U-hP6">
@@ -113,12 +113,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="error" destination="Usz-6U-hP6" id="SJ8-FJ-e5e"/>
                         <outlet property="errorLabel" destination="Usz-6U-hP6" id="AnL-hb-kcA"/>
-                        <outlet property="loginbutton" destination="JSv-9t-Wri" id="Mje-MT-D0T"/>
-                        <outlet property="logintext" destination="qNY-Q2-u4v" id="KZq-4g-gRV"/>
                         <outlet property="passwordField" destination="0Jx-tW-GG5" id="wh6-WF-aCD"/>
-                        <outlet property="passwordfiled" destination="0Jx-tW-GG5" id="mfV-J7-hTM"/>
                         <outlet property="usernameField" destination="qNY-Q2-u4v" id="ErH-3b-Za0"/>
                     </connections>
                 </viewController>

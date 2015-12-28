@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func loginTouch(sender: AnyObject) {
+    @IBAction func loginClick(sender: AnyObject) {
         let username = usernameField.text
         let password = passwordField.text
         ref.authUser(username, password: password) {
