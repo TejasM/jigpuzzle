@@ -9,26 +9,12 @@
 import UIKit
 import Firebase
 
-func isValidEmail(testStr:String) -> Bool {
-    // println("validate calendar: \(testStr)")
-    let emailRegEx = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
-    
-    let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-    return emailTest.evaluateWithObject(testStr)
-}
-
 class LoginViewController: UIViewController {
+    @IBOutlet weak var usernameField: UITextField!
 
-    @IBOutlet weak var usernamefield: UITextField!
-    
-    @IBOutlet weak var passwordfield: UITextField!
-    
-    @IBOutlet weak var loginbutton: UIButton!
-    
-    //#import <Firebase/Firebase.h>
-    let ref = Firebase(url: "https://<YOUR-FIREBASE-APP>.firebaseio.com/")
-    
-    @IBOutlet weak var error: UILabel!
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var passwordField: UITextField!
+    let ref = Firebase(url: "https://puzzleme.firebaseio.com/")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,15 +28,36 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginTouch(sender: AnyObject) {
-        let username = usernamefield.text
-        let password = passwordfield.text
-            //TODO: check with Firebase
-            // Go to next screen
-            // or display error
-            //TODO:
-            error.text = "Username/Password combination not found"
-            error.hidden = false
+        let username = usernameField.text
+        let password = passwordField.text
+        ref.authUser(username, password: password) {
+            error, authData in
+            if error != nil {
+                if let errorCode = FAuthenticationError(rawValue: error.code) {
+                    switch (errorCode) {
+                    case .UserDoesNotExist:
+                        self.errorLabel.text = "Username/Password combination not found"
+                        self.errorLabel.hidden = false
+                    case .InvalidEmail:
+                        self.errorLabel.text = "Username/Password combination not found"
+                        self.errorLabel.hidden = false
+                    case .InvalidPassword:
+                        self.errorLabel.text = "Username/Password combination not found"
+                        self.errorLabel.hidden = false
+                    default:
+                        self.errorLabel.text = "Username/Password combination not found"
+                        self.errorLabel.hidden = false
+                    }
+                }
+                
+            } else {
+                        
+                let cameraPageView = self.storyboard?.instantiateViewControllerWithIdentifier("CameraViewController")
+                
+                self.navigationController?.pushViewController(cameraPageView!, animated: true)
+            }
         }
+    }
 
     /*
     // MARK: - Navigation

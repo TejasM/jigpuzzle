@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var usernameField: UITextField!
+    
+    @IBOutlet weak var passwordField: UITextField!
+    
+    let ref = Firebase(url: "https://puzzleme.firebaseio.com/")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +28,34 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func signupClicked(sender: AnyObject) {
+        let username = usernameField.text! as String
+        let password = passwordField.text
+        ref.createUser(username, password: password,
+            withValueCompletionBlock: { error, authData in
+                if error != nil {
+                    // There was an error creating the account
+//                    self.errorLabel.text = "Username/Password combination not found"
+//                    self.errorLabel.hidden = false
+                } else {
+                    print(authData)
+                // GO TO CAMERA VIEW
+                    let newUser = [
+                        "provider": "password",
+                        "displayName": username
+                    ]
+                    
+                    let uid = authData["uid"] as? String
+                
+                    self.ref.childByAppendingPath("users")
+                        .childByAppendingPath(uid).setValue(newUser)
+                
+                    let cameraPageView = self.storyboard?.instantiateViewControllerWithIdentifier("CameraViewController")
+                
+                    self.navigationController?.pushViewController(cameraPageView!, animated: true)
+                }
+            })
+    }
 
     /*
     // MARK: - Navigation
