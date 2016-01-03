@@ -18,7 +18,14 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        for family: String in UIFont.familyNames()
+        {
+            print("\(family)")
+            for names: String in UIFont.fontNamesForFamilyName(family)
+            {
+                print("== \(names)")
+            }
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -33,6 +40,7 @@ class LoginViewController: UIViewController {
         ref.authUser(username, password: password) {
             error, authData in
             if error != nil {
+                print("Login Error")
                 if let errorCode = FAuthenticationError(rawValue: error.code) {
                     switch (errorCode) {
                     case .UserDoesNotExist:
@@ -51,10 +59,10 @@ class LoginViewController: UIViewController {
                 }
                 
             } else {
-                        
-                let cameraPageView = self.storyboard?.instantiateViewControllerWithIdentifier("CameraViewController")
+                print("Login Success")
                 
-                self.navigationController?.pushViewController(cameraPageView!, animated: true)
+                let vc = self.storyboard!.instantiateViewControllerWithIdentifier("CameraView") as! CameraViewController
+                self.presentViewController(vc, animated: true, completion: nil)
             }
         }
     }

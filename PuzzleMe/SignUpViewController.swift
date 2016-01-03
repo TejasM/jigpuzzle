@@ -50,7 +50,7 @@ class SignUpViewController: UIViewController {
                     self.ref.childByAppendingPath("users")
                         .childByAppendingPath(uid).setValue(newUser)
                 
-                    let cameraPageView = self.storyboard?.instantiateViewControllerWithIdentifier("CameraViewController")
+                    let cameraPageView = self.storyboard?.instantiateViewControllerWithIdentifier("CameraView")
                 
                     self.navigationController?.pushViewController(cameraPageView!, animated: true)
                 }
