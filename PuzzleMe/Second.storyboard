@@ -608,32 +608,6 @@
             </objects>
             <point key="canvasLocation" x="1199.5" y="954.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="8ir-0q-NRc">
-            <objects>
-                <viewController id="Ggg-St-lcb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vwW-WG-iSs">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tqj-pM-cQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ns2-qg-Ve8">
-            <objects>
-                <viewController id="iMc-rk-NgZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="F2t-QR-osD">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r9r-el-IdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="p7s-MT-lpi"/>
