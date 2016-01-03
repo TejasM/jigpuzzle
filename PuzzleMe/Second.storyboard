@@ -481,40 +481,53 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPC-vd-59P">
                                 <rect key="frame" x="0.0" y="33" width="375" height="601"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4a-D1-YqR">
-                                        <rect key="frame" x="20" y="282" width="78" height="38"/>
-                                        <color key="backgroundColor" red="0.12702047413793102" green="0.73149245689655173" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXF-Yf-pTe">
+                                        <rect key="frame" x="165" y="290" width="44" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="30" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cj1-N4-XRU">
+                                        <rect key="frame" x="168" y="321" width="39" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="secs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVM-Rp-Xf4">
+                                        <rect key="frame" x="170" y="356" width="35.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6V-Gu-Lyg">
+                                        <rect key="frame" x="20" y="543" width="99" height="38"/>
+                                        <color key="backgroundColor" red="0.86274245689655171" green="0.020689655172413793" blue="0.075511853448275865" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
-                                        <state key="normal" title="EASY"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-KA-rsg">
-                                        <rect key="frame" x="137" y="282" width="100" height="38"/>
-                                        <color key="backgroundColor" red="1" green="0.73149245689655173" blue="0.036233836206896554" alpha="1" colorSpace="calibratedRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnE-nF-6Gq">
+                                        <rect key="frame" x="275" y="543" width="80" height="38"/>
+                                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
-                                        <state key="normal" title="MEDIUM"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJT-Sw-P7R">
-                                        <rect key="frame" x="274" y="282" width="81" height="38"/>
-                                        <color key="backgroundColor" red="0.86274245689655171" green="0.013793103448275862" blue="0.075511853448275865" alpha="1" colorSpace="calibratedRGB"/>
-                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
-                                        <state key="normal" title="HARD"/>
+                                        <state key="normal" title="SEND">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="C4a-D1-YqR" firstAttribute="centerY" secondItem="fPC-vd-59P" secondAttribute="centerY" id="F41-6e-rMO"/>
-                                    <constraint firstItem="C4a-D1-YqR" firstAttribute="leading" secondItem="fPC-vd-59P" secondAttribute="leading" constant="20" id="JdK-3f-wSN"/>
-                                    <constraint firstItem="zJT-Sw-P7R" firstAttribute="centerY" secondItem="fPC-vd-59P" secondAttribute="centerY" id="Pd5-5J-SJ3"/>
-                                    <constraint firstItem="JC2-KA-rsg" firstAttribute="centerY" secondItem="fPC-vd-59P" secondAttribute="centerY" id="Zs5-Bh-Q8X"/>
-                                    <constraint firstAttribute="trailing" secondItem="zJT-Sw-P7R" secondAttribute="trailing" constant="20" id="i9f-wF-ZzJ"/>
-                                    <constraint firstItem="JC2-KA-rsg" firstAttribute="centerX" secondItem="fPC-vd-59P" secondAttribute="centerX" id="u6O-uv-XcB"/>
-                                    <constraint firstItem="JC2-KA-rsg" firstAttribute="leading" secondItem="zJT-Sw-P7R" secondAttribute="trailing" constant="20" id="wCS-jm-cWa"/>
+                                    <constraint firstAttribute="bottom" secondItem="z6V-Gu-Lyg" secondAttribute="bottom" constant="20" id="5SE-WN-Wg1"/>
+                                    <constraint firstItem="fXF-Yf-pTe" firstAttribute="centerX" secondItem="fPC-vd-59P" secondAttribute="centerX" id="JRZ-rH-NTn"/>
+                                    <constraint firstItem="Cj1-N4-XRU" firstAttribute="centerX" secondItem="fPC-vd-59P" secondAttribute="centerX" id="NLT-4t-qrD"/>
+                                    <constraint firstItem="fXF-Yf-pTe" firstAttribute="centerY" secondItem="fPC-vd-59P" secondAttribute="centerY" id="SDc-lS-hgT"/>
+                                    <constraint firstAttribute="trailing" secondItem="KnE-nF-6Gq" secondAttribute="trailing" constant="20" id="Xgm-gk-LSa"/>
+                                    <constraint firstItem="XVM-Rp-Xf4" firstAttribute="centerX" secondItem="fPC-vd-59P" secondAttribute="centerX" id="ZMr-q8-FhK"/>
+                                    <constraint firstItem="z6V-Gu-Lyg" firstAttribute="leading" secondItem="fPC-vd-59P" secondAttribute="leading" constant="20" id="jqo-1L-78U"/>
+                                    <constraint firstItem="XVM-Rp-Xf4" firstAttribute="top" secondItem="Cj1-N4-XRU" secondAttribute="bottom" constant="5" id="mQF-ar-Hb0"/>
+                                    <constraint firstAttribute="bottom" secondItem="KnE-nF-6Gq" secondAttribute="bottom" constant="20" id="wUO-HL-jlj"/>
+                                    <constraint firstItem="Cj1-N4-XRU" firstAttribute="top" secondItem="fXF-Yf-pTe" secondAttribute="bottom" constant="10" id="xWQ-JT-hzY"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="wCS-jm-cWa"/>
-                                    </mask>
-                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -600,7 +613,7 @@
                     <view key="view" contentMode="scaleToFill" id="cCE-uP-say">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
