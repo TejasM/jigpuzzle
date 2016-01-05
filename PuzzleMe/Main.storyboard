@@ -465,7 +465,7 @@
         <!--Camera View-->
         <scene sceneID="zhD-VX-kyg">
             <objects>
-                <viewController title="Camera View" id="7XY-Sc-8xU" customClass="CameraViewController" customModule="PuzzleMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraView" title="Camera View" id="7XY-Sc-8xU" customClass="CameraViewController" customModule="PuzzleMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xyd-fx-GNA"/>
                         <viewControllerLayoutGuide type="bottom" id="Jgz-zN-NaX"/>
@@ -483,7 +483,7 @@
                                 <state key="normal" title="Switch Camera"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNz-m4-OaX">
-                                <rect key="frame" x="145" y="30" width="107" height="30"/>
+                                <rect key="frame" x="134" y="30" width="107" height="30"/>
                                 <state key="normal" title="Settings Button"/>
                                 <connections>
                                     <segue destination="cfe-9L-Kxm" kind="show" id="kH4-7b-hY3"/>
@@ -565,6 +565,7 @@
                             <constraint firstAttribute="trailing" secondItem="HTp-nl-vKc" secondAttribute="trailing" id="7Bi-HW-4vk"/>
                             <constraint firstItem="hcF-9R-VaT" firstAttribute="top" secondItem="xyd-fx-GNA" secondAttribute="bottom" constant="10" id="ABU-1I-jPt"/>
                             <constraint firstAttribute="trailing" secondItem="fPC-vd-59P" secondAttribute="trailing" id="Bh6-13-c8h"/>
+                            <constraint firstItem="iNz-m4-OaX" firstAttribute="centerX" secondItem="vpQ-Gf-ktV" secondAttribute="centerX" id="GOQ-Ot-aA6"/>
                             <constraint firstItem="fPC-vd-59P" firstAttribute="centerY" secondItem="vpQ-Gf-ktV" secondAttribute="centerY" id="R10-qB-klc"/>
                             <constraint firstItem="fPC-vd-59P" firstAttribute="centerY" secondItem="vpQ-Gf-ktV" secondAttribute="centerY" id="W4R-2y-ANT"/>
                             <constraint firstItem="Jgz-zN-NaX" firstAttribute="top" secondItem="Lus-lD-Sqv" secondAttribute="bottom" constant="20" id="ael-Yf-ZY5"/>
@@ -580,6 +581,7 @@
                             <mask key="constraints">
                                 <exclude reference="R10-qB-klc"/>
                                 <exclude reference="phU-cD-djh"/>
+                                <exclude reference="l20-QJ-Nax"/>
                             </mask>
                         </variation>
                     </view>
@@ -801,8 +803,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="p7s-MT-lpi"/>
-        <segue reference="hwV-Bf-V2r"/>
-        <segue reference="E1v-XF-Nd6"/>
-        <segue reference="qA9-4x-YXl"/>
+        <segue reference="j7D-Tw-vcX"/>
+        <segue reference="CGL-6p-zKV"/>
+        <segue reference="0GL-61-6xm"/>
     </inferredMetricsTieBreakers>
 </document>
