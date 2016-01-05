@@ -34,6 +34,11 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+    
     @IBAction func loginClick(sender: AnyObject) {
         let username = usernameField.text
         let password = passwordField.text

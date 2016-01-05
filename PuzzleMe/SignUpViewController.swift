@@ -29,6 +29,11 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+    
     @IBAction func signupClicked(sender: AnyObject) {
         let username = usernameField.text! as String
         let password = passwordField.text
@@ -56,6 +61,7 @@ class SignUpViewController: UIViewController {
                     self.navigationController?.pushViewController(cameraPageView!, animated: true)
                 }
             })
+        
     }
 
     /*
