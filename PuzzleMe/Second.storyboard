@@ -421,6 +421,9 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hNB-uV-eKD" kind="show" id="YJU-WD-lWW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -672,6 +675,30 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1199.5" y="-673.5"/>
+        </scene>
+        <!--Puzzle View-->
+        <scene sceneID="2OY-1c-l5i">
+            <objects>
+                <viewController title="Puzzle View" id="hNB-uV-eKD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IlU-KF-X6b"/>
+                        <viewControllerLayoutGuide type="bottom" id="PPg-ke-fCM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iy1-K6-8Ay">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tJY-1n-ert">
+                                <rect key="frame" x="81" y="263" width="139" height="141"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JWq-Aw-7vm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780.5" y="-666.5"/>
         </scene>
         <!--Send To Contacts-->
         <scene sceneID="xj0-jc-kDO">
