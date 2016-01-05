@@ -15,6 +15,7 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var errorField: UILabel!
     let ref = Firebase(url: "https://puzzleme.firebaseio.com/")
     
     override func viewDidLoad() {

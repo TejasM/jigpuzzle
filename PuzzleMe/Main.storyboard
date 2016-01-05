@@ -70,7 +70,7 @@
         <!--Sign Up Screen-->
         <scene sceneID="PAN-Nc-QDW">
             <objects>
-                <viewController title="Sign Up Screen" id="OkZ-gc-cSq" sceneMemberID="viewController">
+                <viewController title="Sign Up Screen" id="OkZ-gc-cSq" customClass="SignUpViewController" customModule="PuzzleMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pch-rp-6WP"/>
                         <viewControllerLayoutGuide type="bottom" id="1Xk-AI-q0Z"/>
@@ -109,6 +109,9 @@
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signupClicked:" destination="OkZ-gc-cSq" eventType="touchUpInside" id="xH3-Vb-7yA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi6-Ds-yzZ">
                                 <rect key="frame" x="0.0" y="396" width="375" height="21"/>
@@ -150,6 +153,11 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="errorField" destination="kCd-s1-iIc" id="QIT-Vd-rh9"/>
+                        <outlet property="passwordField" destination="Vc7-oD-k34" id="N60-qo-I7B"/>
+                        <outlet property="usernameField" destination="dZ9-NY-vPc" id="h9u-55-cEt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEQ-Kb-g4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,7 +166,7 @@
         <!--Login Screen-->
         <scene sceneID="YnQ-Tz-Ksh">
             <objects>
-                <viewController title="Login Screen" id="9m0-a9-khj" sceneMemberID="viewController">
+                <viewController title="Login Screen" id="9m0-a9-khj" customClass="LoginViewController" customModule="PuzzleMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="saq-hg-13f"/>
                         <viewControllerLayoutGuide type="bottom" id="yc9-mK-wjw"/>
@@ -197,6 +205,9 @@
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginClick:" destination="9m0-a9-khj" eventType="touchUpInside" id="Nrj-97-rdu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeJ-vI-khh">
                                 <rect key="frame" x="0.0" y="396" width="375" height="20.5"/>
@@ -238,6 +249,11 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="BJY-6l-Twu" id="dLF-0n-YiV"/>
+                        <outlet property="passwordField" destination="ldr-Ji-rTl" id="1fg-t9-XDd"/>
+                        <outlet property="usernameField" destination="EU2-QE-d3f" id="J1u-3z-alQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t2u-4G-cej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -449,7 +465,7 @@
         <!--Camera View-->
         <scene sceneID="zhD-VX-kyg">
             <objects>
-                <viewController title="Camera View" id="7XY-Sc-8xU" sceneMemberID="viewController">
+                <viewController title="Camera View" id="7XY-Sc-8xU" customClass="CameraViewController" customModule="PuzzleMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xyd-fx-GNA"/>
                         <viewControllerLayoutGuide type="bottom" id="Jgz-zN-NaX"/>
@@ -483,6 +499,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lus-lD-Sqv">
                                 <rect key="frame" x="130" y="617" width="115" height="30"/>
                                 <state key="normal" title="Take Pick Button"/>
+                                <connections>
+                                    <action selector="takePic" destination="7XY-Sc-8xU" eventType="touchUpInside" id="0aU-nc-wdP"/>
+                                </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPC-vd-59P">
                                 <rect key="frame" x="0.0" y="33" width="375" height="601"/>
@@ -565,6 +584,10 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cameraView" destination="vpQ-Gf-ktV" id="rvn-sE-hwK"/>
+                        <outlet property="tempImageView" destination="HTp-nl-vKc" id="goA-eG-Vbs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzo-Gt-WvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -777,7 +800,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hx4-qd-mxx"/>
+        <segue reference="p7s-MT-lpi"/>
         <segue reference="hwV-Bf-V2r"/>
         <segue reference="E1v-XF-Nd6"/>
         <segue reference="qA9-4x-YXl"/>

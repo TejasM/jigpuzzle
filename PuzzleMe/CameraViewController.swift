@@ -111,5 +111,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
     }
     
+    @IBAction func takePic(){
+        didPressTakePhoto()
+    }
+    
     
 }
