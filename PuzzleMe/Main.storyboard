@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puzzle Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqj-6J-JZ4">
-                                <rect key="frame" x="16" y="120" width="343" height="44.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Puzzle Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqj-6J-JZ4">
+                                <rect key="frame" x="16" y="68" width="343" height="44.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,17 +46,24 @@
                                     <segue destination="9m0-a9-khj" kind="show" id="CGL-6p-zKV"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="puzzle" translatesAutoresizingMaskIntoConstraints="NO" id="Gy3-3w-3BJ">
+                                <rect key="frame" x="114" y="147" width="128" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98039215686274506" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rRG-oC-Bzz" secondAttribute="trailing" id="0jg-HL-1si"/>
+                            <constraint firstItem="Gy3-3w-3BJ" firstAttribute="top" secondItem="zqj-6J-JZ4" secondAttribute="bottom" constant="34.5" id="22J-26-cyy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zqj-6J-JZ4" secondAttribute="trailing" id="5oZ-rM-CZJ"/>
                             <constraint firstItem="zqj-6J-JZ4" firstAttribute="leading" secondItem="S9P-hk-MH2" secondAttribute="leadingMargin" id="6Rq-HY-F72"/>
                             <constraint firstItem="zqj-6J-JZ4" firstAttribute="centerX" secondItem="S9P-hk-MH2" secondAttribute="centerX" id="7Ss-he-s5n"/>
                             <constraint firstItem="cwt-3r-BuA" firstAttribute="top" secondItem="zqj-6J-JZ4" secondAttribute="bottom" constant="200" id="9nE-Tb-xbo"/>
                             <constraint firstAttribute="trailing" secondItem="cwt-3r-BuA" secondAttribute="trailing" id="Os7-3P-Tsi"/>
+                            <constraint firstItem="Gy3-3w-3BJ" firstAttribute="leading" secondItem="S9P-hk-MH2" secondAttribute="leadingMargin" constant="94" id="Sek-p6-C2h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gy3-3w-3BJ" secondAttribute="trailing" constant="113" id="TnK-E5-0Om"/>
                             <constraint firstItem="rRG-oC-Bzz" firstAttribute="leading" secondItem="S9P-hk-MH2" secondAttribute="leading" id="aBv-yc-nGb"/>
                             <constraint firstItem="rRG-oC-Bzz" firstAttribute="top" secondItem="cwt-3r-BuA" secondAttribute="bottom" id="aTB-hT-mO8"/>
+                            <constraint firstItem="cwt-3r-BuA" firstAttribute="top" secondItem="Gy3-3w-3BJ" secondAttribute="bottom" constant="89" id="h7w-fD-iTs"/>
                             <constraint firstItem="cwt-3r-BuA" firstAttribute="leading" secondItem="S9P-hk-MH2" secondAttribute="leading" id="hum-Jf-kQP"/>
                             <constraint firstItem="zqj-6J-JZ4" firstAttribute="top" secondItem="fPq-HA-Wz1" secondAttribute="bottom" constant="100" id="xT0-LW-SOy"/>
                         </constraints>
@@ -871,10 +878,13 @@
             <point key="canvasLocation" x="1199.5" y="954.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="puzzle" width="465" height="465"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fN5-ON-6g0"/>
         <segue reference="p7s-MT-lpi"/>
-        <segue reference="qA9-4x-YXl"/>
+        <segue reference="fN5-ON-6g0"/>
         <segue reference="0GL-61-6xm"/>
+        <segue reference="CGL-6p-zKV"/>
     </inferredMetricsTieBreakers>
 </document>

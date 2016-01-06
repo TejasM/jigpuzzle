@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E81C3C31C3CC91C00A8BF09 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E81C3C21C3CC91C00A8BF09 /* Launch Screen.storyboard */; };
 		A411C7321C3B5BEA0058FB3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A411C7311C3B5BEA0058FB3B /* Main.storyboard */; };
 		A426A2CB1C2A0508008DC3B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A426A2CA1C2A0508008DC3B1 /* AppDelegate.swift */; };
 		A426A2D21C2A0508008DC3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A426A2D11C2A0508008DC3B1 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E81C3C21C3CC91C00A8BF09 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A411C7311C3B5BEA0058FB3B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A426A2C71C2A0508008DC3B1 /* PuzzleMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A426A2CA1C2A0508008DC3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				A440E5CB1C2F089A00178854 /* LoginViewController.swift */,
 				A440E5CD1C2F08B000178854 /* SignUpViewController.swift */,
 				A4607B4E1C30C611002A1727 /* CameraViewController.swift */,
+				0E81C3C21C3CC91C00A8BF09 /* Launch Screen.storyboard */,
 			);
 			path = PuzzleMe;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				A480AB2E1C38C456009D4699 /* fontawesome-webfont.ttf in Resources */,
 				A426A2D21C2A0508008DC3B1 /* Assets.xcassets in Resources */,
+				0E81C3C31C3CC91C00A8BF09 /* Launch Screen.storyboard in Resources */,
 				A411C7321C3B5BEA0058FB3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
