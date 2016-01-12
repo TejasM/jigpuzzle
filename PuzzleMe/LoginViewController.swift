@@ -64,6 +64,8 @@ class LoginViewController: UIViewController {
                 }
                 
             } else {
+                KeychainWrapper.setString(username!, forKey: "UserId")
+                KeychainWrapper.setString(password!, forKey: "UserPass")
                 print("Login Success")
                 
                 let vc = self.storyboard!.instantiateViewControllerWithIdentifier("CameraView") as! CameraViewController

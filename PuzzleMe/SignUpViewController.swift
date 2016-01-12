@@ -45,6 +45,8 @@ class SignUpViewController: UIViewController {
 //                    self.errorLabel.hidden = false
                 } else {
                     print(authData)
+                    KeychainWrapper.setString(username, forKey: "UserId")
+                    KeychainWrapper.setString(password!, forKey: "UserPass")
                 // GO TO CAMERA VIEW
                     let newUser = [
                         "provider": "password",
