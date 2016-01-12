@@ -58,6 +58,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                     previewLayer?.videoGravity = AVLayerVideoGravityResizeAspect
                     previewLayer?.connection.videoOrientation = AVCaptureVideoOrientation.Portrait
                     cameraView.layer.addSublayer(previewLayer!)
+                    previewLayer?.zPosition = -1
                     captureSession?.startRunning()
                 }
             }
@@ -66,8 +67,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         
     }
-    @IBOutlet var tempImageView: UIImageView!
-    
     func didPressTakePhoto(){
         if let videoConnection = stillImageOutput?.connectionWithMediaType(AVMediaTypeVideo){
             videoConnection.videoOrientation = AVCaptureVideoOrientation.Portrait
@@ -81,9 +80,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                     
                     let image = UIImage(CGImage: cgImageRef!, scale: 1.0, orientation: UIImageOrientation.Right)
                     
-                    self.tempImageView.image = image
-                    self.tempImageView.hidden = false
-                    
                 }
                 
                 
@@ -95,25 +91,5 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     
     var didTakePhoto = Bool()
-    
-    func didPressTakeAnother(){
-        if didTakePhoto == true{
-            tempImageView.hidden = true
-            didTakePhoto = false
-            
-        }
-        else{
-            captureSession?.startRunning()
-            didTakePhoto = true
-            didPressTakePhoto()
-            
-        }
-        
-    }
-    
-    @IBAction func takePic(){
-        didPressTakePhoto()
-    }
-    
-    
+
 }
