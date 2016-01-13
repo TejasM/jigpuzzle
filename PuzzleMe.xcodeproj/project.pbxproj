@@ -156,7 +156,7 @@
 				TargetAttributes = {
 					A426A2C61C2A0508008DC3B1 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 7G85QBSSNA;
+						DevelopmentTeam = D5L9EZQXK3;
 					};
 				};
 			};
@@ -308,7 +308,7 @@
 				INFOPLIST_FILE = PuzzleMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharpscholar.PuzzleMe2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharpscholar.PuzzleMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -329,7 +329,7 @@
 				INFOPLIST_FILE = PuzzleMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharpscholar.PuzzleMe2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharpscholar.PuzzleMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
