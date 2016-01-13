@@ -420,8 +420,8 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time Taken  30 secs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mji-ZG-pUT">
-                                                    <rect key="frame" x="267" y="24.5" width="88" height="41"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Taken  30 secs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mji-ZG-pUT">
+                                                    <rect key="frame" x="198" y="35" width="157" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -508,7 +508,7 @@
                                 <rect key="frame" x="130" y="617" width="115" height="30"/>
                                 <state key="normal" title="Take Pick Button"/>
                                 <connections>
-                                    <action selector="takePic" destination="7XY-Sc-8xU" eventType="touchUpInside" id="0aU-nc-wdP"/>
+                                    <action selector="didPressTakePhoto" destination="7XY-Sc-8xU" eventType="touchUpInside" id="Q3A-YL-TJJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -817,7 +817,7 @@
         <!--PreviewImage-->
         <scene sceneID="Or2-n6-SPc">
             <objects>
-                <viewController title="PreviewImage" automaticallyAdjustsScrollViewInsets="NO" id="EVw-mB-AM3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PreviewView" title="PreviewImage" automaticallyAdjustsScrollViewInsets="NO" id="EVw-mB-AM3" customClass="PreviewViewController" customModule="PuzzleMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jKh-XS-VUM"/>
                         <viewControllerLayoutGuide type="bottom" id="MBz-Ai-aGf"/>
@@ -826,7 +826,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPC-vd-59P">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-Us-fH9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="AU0-ih-p2o"/>
+                                    <constraint firstAttribute="height" id="fxF-vC-rF9"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AU0-ih-p2o"/>
+                                        <exclude reference="fxF-vC-rF9"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPC-vd-59P">
                                 <rect key="frame" x="0.0" y="33" width="375" height="601"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXF-Yf-pTe">
@@ -888,25 +901,36 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fPC-vd-59P" firstAttribute="leading" secondItem="n5O-fT-2q4" secondAttribute="leading" id="Cow-aL-Lm5"/>
+                            <constraint firstAttribute="bottom" secondItem="GR9-Us-fH9" secondAttribute="bottom" id="Ddq-1Y-6T6"/>
+                            <constraint firstItem="GR9-Us-fH9" firstAttribute="centerX" secondItem="n5O-fT-2q4" secondAttribute="centerX" id="LP4-1d-vcI"/>
                             <constraint firstAttribute="trailing" secondItem="fPC-vd-59P" secondAttribute="trailing" id="OJY-kD-h98"/>
                             <constraint firstItem="fPC-vd-59P" firstAttribute="centerY" secondItem="n5O-fT-2q4" secondAttribute="centerY" id="gOw-U7-GbV"/>
+                            <constraint firstItem="fPC-vd-59P" firstAttribute="centerX" secondItem="n5O-fT-2q4" secondAttribute="centerX" id="h1w-ar-XQK"/>
+                            <constraint firstItem="GR9-Us-fH9" firstAttribute="centerY" secondItem="n5O-fT-2q4" secondAttribute="centerY" id="jGz-5E-kXC"/>
                             <constraint firstItem="fPC-vd-59P" firstAttribute="top" secondItem="jKh-XS-VUM" secondAttribute="bottom" constant="13" id="kbV-94-xZp"/>
+                            <constraint firstItem="fPC-vd-59P" firstAttribute="centerY" secondItem="n5O-fT-2q4" secondAttribute="centerY" id="keN-1G-wTb"/>
+                            <constraint firstAttribute="trailing" secondItem="GR9-Us-fH9" secondAttribute="trailing" id="sUu-dD-krl"/>
+                            <constraint firstItem="GR9-Us-fH9" firstAttribute="top" secondItem="n5O-fT-2q4" secondAttribute="top" id="vM0-Is-AAu"/>
+                            <constraint firstItem="GR9-Us-fH9" firstAttribute="leading" secondItem="n5O-fT-2q4" secondAttribute="leading" id="xaB-ZU-1nX"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="previewImageView" destination="GR9-Us-fH9" id="RE2-t5-OqN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAs-lK-YNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1096" y="1812"/>
+            <point key="canvasLocation" x="1095.5" y="1811.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="puzzle" width="465" height="465"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CGL-6p-zKV"/>
         <segue reference="0GL-61-6xm"/>
-        <segue reference="p7s-MT-lpi"/>
+        <segue reference="CGL-6p-zKV"/>
+        <segue reference="Hx4-qd-mxx"/>
         <segue reference="fN5-ON-6g0"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -23,6 +23,7 @@
 		A4A5B1A41C3047E900981E49 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A5B1A31C3047E900981E49 /* CFNetwork.framework */; };
 		A4A5B1A61C3047FA00981E49 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A5B1A51C3047FA00981E49 /* Security.framework */; };
 		A4A5B1A81C30480700981E49 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A5B1A71C30480700981E49 /* SystemConfiguration.framework */; };
+		A4F077581C470AE900034F77 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F077571C470AE900034F77 /* PreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A4A5B1A31C3047E900981E49 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A4A5B1A51C3047FA00981E49 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A4A5B1A71C30480700981E49 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A4F077571C470AE900034F77 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		F78F76CDE920DA081837BF14 /* libPods-PuzzleMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PuzzleMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				A4607B4E1C30C611002A1727 /* CameraViewController.swift */,
 				0E81C3C21C3CC91C00A8BF09 /* Launch Screen.storyboard */,
 				0E76E9AE1C4597B6004D23D8 /* InitialViewController.swift */,
+				A4F077571C470AE900034F77 /* PreviewViewController.swift */,
 			);
 			path = PuzzleMe;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			files = (
 				A440E5CC1C2F089A00178854 /* LoginViewController.swift in Sources */,
 				A4607B4F1C30C611002A1727 /* CameraViewController.swift in Sources */,
+				A4F077581C470AE900034F77 /* PreviewViewController.swift in Sources */,
 				A440E5CE1C2F08B000178854 /* SignUpViewController.swift in Sources */,
 				0E76E9AF1C4597B6004D23D8 /* InitialViewController.swift in Sources */,
 				A426A2CB1C2A0508008DC3B1 /* AppDelegate.swift in Sources */,

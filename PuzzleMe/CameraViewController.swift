@@ -67,7 +67,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         
     }
-    func didPressTakePhoto(){
+    
+    @IBAction func didPressTakePhoto(){
         if let videoConnection = stillImageOutput?.connectionWithMediaType(AVMediaTypeVideo){
             videoConnection.videoOrientation = AVCaptureVideoOrientation.Portrait
             stillImageOutput?.captureStillImageAsynchronouslyFromConnection(videoConnection, completionHandler: {
@@ -79,6 +80,10 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                     let cgImageRef = CGImageCreateWithJPEGDataProvider(dataProvider, nil, true, CGColorRenderingIntent.RenderingIntentDefault)
                     
                     let image = UIImage(CGImage: cgImageRef!, scale: 1.0, orientation: UIImageOrientation.Right)
+                    
+                    let vc = self.storyboard!.instantiateViewControllerWithIdentifier("PreviewView") as! PreviewViewController
+                    vc.image = image
+                    self.presentViewController(vc, animated: true, completion: nil)
                     
                 }
                 
